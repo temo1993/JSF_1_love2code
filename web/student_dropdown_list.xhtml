@@ -17,7 +17,7 @@
         <br/>
         Last name: <h:inputText value="#{studentTwo.lastName}" a:placeholder="Enter your lastname"/>
         <br/>
-        Country: <h:selectOneMenu value="#{studentTwo.country}">
+        Country: <!--<h:selectOneMenu value="#{studentTwo.country}">
         <f:selectItem itemValue="Brazil" itemLabel="Brazil"/>
         <f:selectItem itemValue="France" itemLabel="France"/>
         <f:selectItem itemValue="Germany" itemLabel="Germany"/>
@@ -25,6 +25,10 @@
         <f:selectItem itemValue="Turkey" itemLabel="Turkey"/>
         <f:selectItem itemValue="United Kingdom" itemLabel="United Kingdom"/>
         <f:selectItem itemValue="United States" itemLabel="United States"/>
+        </h:selectOneMenu>-->
+        // Using List of Countries instead of hard coded items
+        <h:selectOneMenu value="#{studentTwo.country}">
+            <f:selectItems value="#{studentTwo.countryOptions}"/>
         </h:selectOneMenu>
         <br/>
         <h:commandButton value="Submit" action="student_two_response"/>
