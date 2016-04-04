@@ -13,7 +13,6 @@ public class StudentFour implements Serializable{
     private String firstName;
     private String lastName;
     private String country;
-    private String language;
 
     // List of countries for the drop-down list
     private List<String> countryOptions;
