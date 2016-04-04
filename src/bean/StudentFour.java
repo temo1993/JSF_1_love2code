@@ -53,14 +53,6 @@ public class StudentFour implements Serializable{
         return favouriteLanguages;
     }
 
-    public void setLanguage(String language) {
-        this.language = language;
-    }
-
-    public String getLanguage() {
-        return language;
-    }
-
     // need to add a getter method for country options
     public List<String> getCountryOptions() {
         return countryOptions;
